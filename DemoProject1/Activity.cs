@@ -2,18 +2,18 @@
 {
     public class Activity
     {
-        private string ActivityName { get; set; }
-        private int Price { get; set; }
+        public string Name { get; set; }
+        public int Price { get; set;  }
 
         public Activity(string activityName, int price)
         {
-            ActivityName = activityName;
+            Name = activityName;
             Price = price;
         }
 
         public override string ToString()
         {
-            return $"{ActivityName}, {nameof(Price)}: {Price}.- Euro";
+            return $"{Name} - Euro {Price} pro Tag";
         }
     }
 }
