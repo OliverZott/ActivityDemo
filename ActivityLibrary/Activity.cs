@@ -1,9 +1,9 @@
-﻿namespace DemoProject1
+﻿namespace ActivityLibrary
 {
     public class Activity
     {
-        public string Name { get; set; }
-        public int Price { get; set;  }
+        public string Name { get; private set; }
+        public int Price { get; set; }
 
         public Activity(string activityName, int price)
         {
@@ -15,5 +15,6 @@
         {
             return $"{Name} - Euro {Price} pro Tag";
         }
+
     }
 }
